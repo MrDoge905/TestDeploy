@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac's Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Add custom styles for particles container */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensure particles are behind other elements */
+        }
+
+    </style>
+</head>
+
+<body class="bg-black m-0 p-0 h-full">
+    <!-- This is the beginning of my nav bar -->
+    <nav class="bg-gray-900 p-4 z-50 fixed w-full">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- This makes the image in my nav bar -->
+            <div class="flex items-center">
+                <!-- Change this to your name -->
+                <h1 class="text-white">Isaacs Portfolio</h1>
+            </div>
+            <div class="flex space-x-4">
+                <a data-aos="fade-up" data-aos-duration="500" href="#home" class="text-white text-sm md:text-base hover:text-red-500">Home</a>
+                <a data-aos="fade-up" data-aos-duration="750" href="#about" class="text-white text-sm md:text-base hover:text-red-500">About</a>
+                <a data-aos="fade-up" data-aos-duration="1000" href="#certifications" class="text-white text-sm md:text-base hover:text-red-500">Certifications</a>
+                <a data-aos="fade-up" data-aos-duration="1250" href="#downloads" class="text-white text-sm md:text-base hover:text-red-500">Downloads</a>
+                <a data-aos="fade-up" data-aos-duration="1500" href="#contact" class="text-white text-sm md:text-base hover:text-red-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- This is the ending of my navbar -->
+    <div id="particles-js"></div> <!-- Move particles container outside of flex container -->
+    <div id="home" class="flex flex-col justify-center items-center h-screen">
+        <h1 class="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-blue-200 to-blue-700 text-transparent bg-clip-text">Welcome to Isaac's Portfolio</h1>
+        <p class="text-lg text-gray-700 text-center mb-8">Discover my Accomplishments and Experiences.</p>
+        <a href="#" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
+    </div>
+
+     <!--About Me Section-->
+  <section data-aos="fade-right" data-aos-duration="2000" id="about" class="bg-white bg-opacity-5 backdrop-blur-md border-2 border-gray-300 rounded-lg px-8 py-8 text-white text-center max-w-7xl mx-auto flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
+    <!-- Professional Photo on the left -->
+    <!-- Change the src image to your professional photo either through a file path or a URL -->
+    <img src="/pictures/IMG_2538.JPG" alt="Professional Photo" class="w-full lg:w-80 h-96 lg:h-160 object-contain rounded-xl mb-4 lg:mb-0">
+    <!-- Text section on the right -->
+    <div class="text-center lg:text-left">
+      <h2 data-aos="fade-up" data-aos-duration="2000" class="text-black text-4xl font-bold mb-4">About Me</h2>
+      <!-- Change the text inside of this p element so that it is YOUR about me -->
+      <p data-aos="fade-up" data-aos-duration="2500" class="text-gray-600">
+        My Name is Isaac Bell, I am a 16-year-old with a passion for technology and a strong drive to learn and grow. I'm currently a student at Somerset Area Senior High School, where I'm pursuing my high school education. In addition, I'm also enrolled at the Somerset County Technology Center, where I'm honing my skills in the field of Computer Networking.
+
+        One of the exciting parts of my journey is my employment at George and Bob's Computer Service. Working there has been an invaluable experience, allowing me to apply what I've learned in school to real-world situations. It's been a fantastic opportunity to gain hands-on experience in the tech industry and develop my problem-solving skills.
+              
+        I'm a firm believer in the power of technology to drive positive change, and I'm enthusiastic about the endless possibilities it offers. In my free time, I enjoy tinkering with computers and exploring new software. I also love staying up to date with the latest tech trends and developments.
+               
+        My goal is to continue my education, build a successful career in the tech industry, and contribute to the ever-evolving world of technology. I'm always eager to learn, adapt, and take on new challenges. Feel free to reach out and connect with me on this exciting journey!
+    </p>
+    </div>
+  </section id="accomplishments">
+
+  <!-- Accomplishments Section -->
+  <section class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-white mb-6">Accomplishments</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Accomplishment Card 1 -->
+        <div data-aos="fade-right" data-aos-duration="1500" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">FBLA 1st in Region</h3>
+          <p class="text-gray-600">I am a 1st place competitor in Cybersecurity for Region 17, PAFBLA in 2023. </p>
+        </div>
+  
+        <!-- Accomplishment Card 2 -->
+        <div data-aos="fade-right" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">FBLA 10th in state</h3>
+          <p class="text-gray-600">I am a 10th place competitor in Cybersecurity for the state of Pennsylvania out of about 100 people, in 2023.</p>
+        </div>
+  
+        <!-- Accomplishment Card 3 -->
+        <div data-aos="fade-right" data-aos-duration="2500" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Successfully Restored Business Infrastructure</h3>
+          <p class="text-gray-600">During my time at George and Bobs I restored a businesses computer system by reimaging their OS for their proprietary software that ran on MS-DOS 5.0!</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1500" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Created Sign-in Sign-out Solution</h3>
+          <p class="text-gray-600">Saw a flaw in the current sign-in sign-out system at my technical school and made a web solution that solved the problem</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">SkillsUSA Silver Medalist in Internetworking</h3>
+          <p class="text-gray-600">Saw a flaw in the current sign-in sign-out system at my technical school and made a web solution that solved the problem</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2500" class="bg-white p-4 rounded-lg shadow-md bg-opacity-5 backdrop-blur-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">FBLA 2023-2024 State Qualifier</h3>
+          <p class="text-gray-600">Qualified for my competititve events State Competition of Website Coding & Development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8" id="certifications">
+    <h2 class="text-center text-3xl font-semibold text-black mb-6">Certifications</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- First Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="/pictures/cybersafety.jpg" alt="Image 1" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-black text-xl font-bold">CareerSafe Cyber Safety Awareness</h3>
+          <p class="text-base text-gray-700">The CareerSafe® Cyber Safety Awareness Training series provides students with basic
+            awareness training to recognize and respond to cyberbullying situations, an introduction to cyber safety and
+            an overview of how to recognize and respond to sexting situations.</p>
+        </div>
+      </div>
+  
+      <!-- Second Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000"  class="flex flex-col items-center">
+        <img src="/pictures/Osha.jpg" alt="OSHA 10 Hour General Industry" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-black text-xl font-bold">OSHA 10-Hour General Industry</h3>
+          <p class="text-gray-700 text-base">The OSHA 10-Hour General Industry course is a workplace safety training program designed by the Occupational Safety and Health Administration (OSHA) in the United States. It is intended to educate workers and employers on essential safety and health topics within a general industry setting.</p>
+        </div>
+      </div>
+  
+      <!-- Add more image and description pairs as needed -->
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="/pictures/Certificate (1).jpg" alt="TestOut ITF Pro" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-black text-xl font-bold">TestOut ITF Pro</h3>
+          <p class="text-gray-700 text-base">The TestOut IT Fundamentals (ITF) certification validates foundational knowledge in IT concepts, including hardware, software, networking, security, and troubleshooting. It is ideal for those new to IT, providing a strong foundation for entry-level positions and future certification pursuits.</p>
+        </div>
+      </div>
+
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="/pictures/THM-ULB9Z7POIZ.png" alt="TestOut ITF Pro" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-black text-xl font-bold">TryHackMe Pre Security</h3>
+          <p class="text-gray-700 text-base">The Pre-Security Pathway on TryHackMe is a collection of beginner-friendly rooms designed to introduce newcomers to cybersecurity concepts. Participants learn about various topics such as basic networking, Linux fundamentals, web application security, and introductory cryptography. It provides hands-on experience with practical exercises and challenges to reinforce learning and build foundational skills for further exploration in the field of cybersecurity.</p>
+        </div>
+      </div>
+
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="/pictures/THM-ULB9Z7POIZ.png" alt="TestOut ITF Pro" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-black text-xl font-bold">TryHackMe Introduction to Cyber Security</h3>
+          <p class="text-gray-700 text-base">Navigating the vast landscape of Cyber Security can be daunting, but this pathway offers a hands-on introduction to various domains, covering topics such as careers in cybersecurity, offensive security by hacking applications, defensive security against live cyber attacks, and exploring industry-related security topics.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="m-4 flex justify-center items-center min-h-screen">
+    <section id="downloads" class="bg-slate-300 p-6 rounded-lg shadow-lg md:w-1/2 lg:w-1/3">
+        <!-- Page Heading -->
+        <h1 class="text-2xl font-bold mb-4">My Resume and Cover Letter</h1>
+        
+        <!-- Download Links -->
+      <div class="bg-slate-300">
+        <div class="my-4">
+          <!-- Resume -->
+            <a href="resumeOct2023.docx" class="flex justify-center items-center bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Resume</a>
+        </div>
+        <!-- Cover Letter -->
+        <div class="my-4">
+            <a href="cover letter.docx" class="flex justify-center items-center bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Cover Letter</a>
+        </div>
+        <!-- Business Cards -->
+        <div class="my-4">
+          <a href="business cards.doc" class="flex justify-center items-center bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Business Cards</a>
+      </div>
+    </div>
+    </section>
+</div>
+
+<section id="contact" class="bg-slate-300 py-12">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-black mb-6">Contact Information</h2>
+    
+    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+      <!-- Contact Info Card 1 -->
+      <div data-aos="fade-up" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+        <p class="text-gray-600">isaacbell1127@gmail.com</p>
+      </div>
+      
+      <!-- Contact Info Card 2 -->
+      <div data-aos="fade-up" data-aos-duration="2000"  class="bg-white p-4 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+        <p class="text-gray-600">(814)-521-2248</p>
+      </div>
+
+      <!-- Contact Info Card 3 -->
+      <div data-aos="fade-up" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
+        <p class="text-gray-600">332 West Race St, Somerset Pennsylvania</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
